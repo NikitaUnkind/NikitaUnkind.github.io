@@ -16,5 +16,16 @@ $(function() {
     }).bind('close:finish', function () {
         $('.hamburger').removeClass('is-active');
     });
-    
+
 });
+
+$(document).ready(function(){
+    $(".scrolling-down").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+        top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1000);
+    });
+});
+
+
