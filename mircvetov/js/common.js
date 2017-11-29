@@ -28,4 +28,8 @@ $(document).ready(function(){
     });
 });
 
+$(window).on('load', function () {
+    $('.preloader').delay(650).fadeOut('slow')
+});
+
 
