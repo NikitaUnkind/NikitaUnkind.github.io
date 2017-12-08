@@ -17,6 +17,30 @@ $(function() {
         $('.hamburger').removeClass('is-active');
     });
 
+    $('select').selectize({});
+
+    $('.reviews').owlCarousel({
+        loop: true,
+        items: 1,
+        smartSpeed: 1000,
+        nav: false
+    });
+
+    $("form.callback").submit(function() { //Change
+        var th = $(this);
+        $.ajax({
+            type: "POST",
+            url: "mail.php", //Change
+            data: th.serialize()
+        }).done(function() {
+            $(th).find('.success').addClass('active').css('display', 'flex').hide().fadeIn();
+            setTimeout(function() {
+                $(th).find('.success').removeClass('active').fadeOut();
+                th.trigger("reset");
+            }, 3000);
+        });
+        return false;
+    });
 
     $('.carousel-services').on('initialized.owl.carousel', function () {
         setTimeout(function () {
@@ -42,6 +66,11 @@ $(function() {
             }
         }
     });
+
+    function onResize() {
+        $('.carousel-services-content').equalHeights();
+    }onResize();
+    window.onresize = function () {onResize()};
 
 
     function carouselService(){
