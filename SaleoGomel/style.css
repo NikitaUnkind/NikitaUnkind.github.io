@@ -1,0 +1,84 @@
+body{
+	background: bisque;
+	font-style: 2px;
+	font: 10px
+	width:100px;
+	height: 100px;
+	
+
+
+
+}
+#menu{
+		left: 0px
+		padding:0;
+		margin: 0;
+	}
+	.menu li{
+		padding:0px;
+		float: right;
+		display: block;
+		width:23%;
+		height: 35px;
+		border:1px solid blue;
+		background: green;
+		border-radius: 10px
+	}
+	.menu li:hover{
+	background: blue;
+	}
+	.menu a{
+	display: block;
+	padding:0px;
+	margin: 0 auto;
+	text-align: center;
+	text-decoration: none;
+	text-indent: 5px;
+
+}
+ .sub menu{
+ 	display: block;
+ 	
+ }
+	
+	
+}
+	
+	
+}
+
+
+#footer{
+	font-style: 10px
+	font-size: 20px;
+	text-align: right;
+	color: red;
+
+
+}
+#logo
+{
+	height: 10px
+
+
+	}
+.flat{
+	position: absolute;
+	top:0;
+	left:10px;
+	color:green;
+	background: yellow;
+
+}
+.contract{
+	content: 10px;
+	flood-color: black;
+	padding: 0;
+	margin: 0;
+}
+.pred{
+	content: 10px;
+	bottom: 10px;
+	flood-color: red;
+	background: no-repeat;
+}
