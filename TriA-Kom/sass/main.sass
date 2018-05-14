@@ -120,7 +120,6 @@ header
     align-items: center
     position: absolute
     bottom: 0px
-    height: 50px
     width: 100%
     justify-content: space-between
     color: #fff
@@ -153,6 +152,7 @@ header
 .content-section__prof
   width: 100vw
   color: #fff
+  border-bottom: 2px solid #1098de
   .content-section__prof-inner
     width: 100%
     height: 100%
@@ -180,6 +180,66 @@ header
         border-bottom: 2px solid #1098de
         margin: 0px 15px
         padding: 20px 0px
+
+.content-section__team
+  background: rgba(#1098de, .15)
+  padding-top: 5%
+  border-bottom: 2px solid #1098de
+
+.tit-team
+  h1
+    font-size: 35px
+    text-transform: uppercase
+
+.carousel-team
+  &-item
+    color: #222
+    font-size: 20px
+    position: relative
+    display: flex
+
+  .carousel-team_content
+    display: flex
+    position: relative
+    padding: 30px 10%
+  .carousel-team__composition
+    margin: auto
+    text-align: center
+    .carousel-team__list
+      margin-top: 20px
+      li
+        list-style-type: none
+        margin-bottom: 5px
+        text-transform: uppercase
+
+.carousel-team__logo
+  text-align: center
+  width: 200px
+  display: inline-block
+
+.carousel-team__logo:hover
+  transform: scale(1.1)
+  transition: transform 1s ease
+
+.content-section__partners
+  width: 100vw
+  background-position: center
+  background-size: cover
+  color: #fff
+  .content-section__partners-inner
+    width: 100%
+    height: 100%
+    padding: 5% 0px
+    background: rgba(#222, .8)
+    .tit-partners
+      text-transform: uppercase
+      font-size: 35px
+      text-align: right
+      margin-bottom: 15px
+    div
+      text-align: center
+      margin-bottom: 15px
+      font-size: 20px
 
 .img-responsive
 	display: block
